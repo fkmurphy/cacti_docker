@@ -108,3 +108,23 @@
 [2019-07-18 22:08:17] [ always  ] About to import Package #4 'Local_Linux_Machine.xml.gz'.
 [2019-07-18 22:08:33] [ always  ] Import of Package #4 'Local_Linux_Machine.xml.gz' under Profile '1' succeeded
 [2019-07-18 22:08:33] [ always  ] About to import Package #5 'NetSNMP_Device.xml.gz'.
+[2019-07-18 22:09:43] [ always  ] Import of Package #5 'NetSNMP_Device.xml.gz' under Profile '1' succeeded
+[2019-07-18 22:09:43] [ always  ] About to import Package #6 'Windows_Device.xml.gz'.
+[2019-07-18 22:09:57] [ always  ] Import of Package #6 'Windows_Device.xml.gz' under Profile '1' succeeded
+[2019-07-18 22:09:58] [ always  ] Mapping Automation Template for Device Template 'Net-SNMP Device'
+[2019-07-18 22:09:58] [ always  ] Mapping Automation Template for Device Template 'Windows Device'
+[2019-07-18 22:09:58] [ always  ] Mapping Automation Template for Device Template 'Cisco Router'
+[2019-07-18 22:10:00] [ always  ] Updating automation network (1), mode "on" => "on", subnet "192.168.1.0/24" => 192.168.0.0/22"
+[2019-07-18 22:10:00] [ always  ] Adding extra snmp settings for automation
+[2019-07-18 22:10:00] [ always  ] Selecting Automation Option Set 1
+[2019-07-18 22:10:00] [ always  ] Updating Automation Option Set 1
+[2019-07-18 22:10:00] [ always  ] Successfully updated Automation Option Set 1
+[2019-07-18 22:10:00] [ always  ] Resequencing Automation Option Set 1
+[2019-07-18 22:10:01] [ always  ] Device Template for First Cacti Device is 4
+[2019-07-18 22:10:15] [ always  ] Creating Graphs for Default Device
+[2019-07-18 22:10:16] [ always  ] Adding Device to Default Tree
+[2019-07-18 22:10:16] [ always  ] Repopulating poller cache
+[2019-07-18 22:10:17] [ always  ] Repopulating SNMP Agent cache
+[2019-07-18 22:10:35] [ always  ] Generating RSA Key Pair
+[2019-07-18 22:10:35] [ always  ] Finished INSTALL Process for v1.2.4
+[2019-07-18 22:10:37] [ always  ] La instalación se inició a las 2019-07-18 22:05:24, se completó el 2019-07-18 22:10:36

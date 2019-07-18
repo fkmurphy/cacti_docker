@@ -4,3 +4,4 @@ DB_PASS=cacti
 DB_HOST=mysql
 DB_PORT=3306 
 DB_ROOT_PASS=cacti
+TZ="America/Argentina/Buenos_Aires"

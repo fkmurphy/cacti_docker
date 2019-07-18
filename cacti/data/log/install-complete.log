@@ -111,3 +111,24 @@
 [2019-07-18 22:08:17] [          global always  ] About to import Package #4 'Local_Linux_Machine.xml.gz'.
 [2019-07-18 22:08:33] [          global always  ] Import of Package #4 'Local_Linux_Machine.xml.gz' under Profile '1' succeeded
 [2019-07-18 22:08:33] [          global always  ] About to import Package #5 'NetSNMP_Device.xml.gz'.
+[2019-07-18 22:09:43] [          global always  ] Import of Package #5 'NetSNMP_Device.xml.gz' under Profile '1' succeeded
+[2019-07-18 22:09:43] [          global always  ] About to import Package #6 'Windows_Device.xml.gz'.
+[2019-07-18 22:09:57] [          global always  ] Import of Package #6 'Windows_Device.xml.gz' under Profile '1' succeeded
+[2019-07-18 22:09:58] [          global always  ] Mapping Automation Template for Device Template 'Net-SNMP Device'
+[2019-07-18 22:09:58] [          global always  ] Mapping Automation Template for Device Template 'Windows Device'
+[2019-07-18 22:09:58] [          global always  ] Mapping Automation Template for Device Template 'Cisco Router'
+[2019-07-18 22:09:58] [      automation always  ] Setting default data source profile to 5 Minute Collection (1)
+[2019-07-18 22:10:00] [          global always  ] Updating automation network (1), mode "on" => "on", subnet "192.168.1.0/24" => 192.168.0.0/22"
+[2019-07-18 22:10:00] [          global always  ] Adding extra snmp settings for automation
+[2019-07-18 22:10:00] [          global always  ] Selecting Automation Option Set 1
+[2019-07-18 22:10:00] [          global always  ] Updating Automation Option Set 1
+[2019-07-18 22:10:00] [          global always  ] Successfully updated Automation Option Set 1
+[2019-07-18 22:10:00] [          global always  ] Resequencing Automation Option Set 1
+[2019-07-18 22:10:01] [          global always  ] Device Template for First Cacti Device is 4
+[2019-07-18 22:10:15] [          global always  ] Creating Graphs for Default Device
+[2019-07-18 22:10:16] [          global always  ] Adding Device to Default Tree
+[2019-07-18 22:10:16] [          global always  ] Repopulating poller cache
+[2019-07-18 22:10:17] [          global always  ] Repopulating SNMP Agent cache
+[2019-07-18 22:10:35] [          global always  ] Generating RSA Key Pair
+[2019-07-18 22:10:35] [          global always  ] Finished INSTALL Process for v1.2.4
+[2019-07-18 22:10:37] [          global always  ] La instalación se inició a las 2019-07-18 22:05:24, se completó el 2019-07-18 22:10:36

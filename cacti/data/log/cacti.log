@@ -1419,3 +1419,63 @@
 2019/07/18 22:08:33 - IMPORT Writing file: /var/www/cacti/scripts/ss_host_cpu.php
 2019/07/18 22:08:33 - IMPORT Write Status file: /var/www/cacti/scripts/ss_host_cpu.php, with Status escrito
 2019/07/18 22:08:33 - IMPORT Importing XML Data for NetSNMP_Device.xml
+2019/07/18 22:09:43 - IMPORT File creation complete
+2019/07/18 22:09:43 - INSTALL: always: Import of Package #5 'NetSNMP_Device.xml.gz' under Profile '1' succeeded
+2019/07/18 22:09:43 - INSTALL: always: About to import Package #6 'Windows_Device.xml.gz'.
+2019/07/18 22:09:43 - IMPORT NOTE: Got Package Signature
+2019/07/18 22:09:43 - IMPORT NOTE: File is Signed Correctly
+2019/07/18 22:09:43 - IMPORT Loading Plugin Information from package
+2019/07/18 22:09:43 - IMPORT Verifying each files signature
+2019/07/18 22:09:43 - IMPORT NOTE: File OK: resource/snmp_queries/interface.xml
+2019/07/18 22:09:43 - IMPORT NOTE: File OK: resource/script_server/host_disk.xml
+2019/07/18 22:09:43 - IMPORT NOTE: File OK: resource/script_server/host_cpu.xml
+2019/07/18 22:09:43 - IMPORT NOTE: File OK: scripts/ss_host_disk.php
+2019/07/18 22:09:43 - IMPORT NOTE: File OK: scripts/ss_host_cpu.php
+2019/07/18 22:09:43 - IMPORT NOTE: File OK: Windows_Device.xml
+2019/07/18 22:09:43 - IMPORT Writing Files
+2019/07/18 22:09:43 - IMPORT Writing file: /var/www/cacti/resource/snmp_queries/interface.xml
+2019/07/18 22:09:43 - IMPORT Write Status file: /var/www/cacti/resource/snmp_queries/interface.xml, with Status escrito
+2019/07/18 22:09:43 - IMPORT Writing file: /var/www/cacti/resource/script_server/host_disk.xml
+2019/07/18 22:09:43 - IMPORT Write Status file: /var/www/cacti/resource/script_server/host_disk.xml, with Status escrito
+2019/07/18 22:09:43 - IMPORT Writing file: /var/www/cacti/resource/script_server/host_cpu.xml
+2019/07/18 22:09:43 - IMPORT Write Status file: /var/www/cacti/resource/script_server/host_cpu.xml, with Status escrito
+2019/07/18 22:09:43 - IMPORT Writing file: /var/www/cacti/scripts/ss_host_disk.php
+2019/07/18 22:09:43 - IMPORT Write Status file: /var/www/cacti/scripts/ss_host_disk.php, with Status escrito
+2019/07/18 22:09:43 - IMPORT Writing file: /var/www/cacti/scripts/ss_host_cpu.php
+2019/07/18 22:09:43 - IMPORT Write Status file: /var/www/cacti/scripts/ss_host_cpu.php, with Status escrito
+2019/07/18 22:09:43 - IMPORT Importing XML Data for Windows_Device.xml
+2019/07/18 22:09:57 - IMPORT File creation complete
+2019/07/18 22:09:57 - INSTALL: always: Import of Package #6 'Windows_Device.xml.gz' under Profile '1' succeeded
+2019/07/18 22:09:58 - INSTALL: always: Mapping Automation Template for Device Template 'Net-SNMP Device'
+2019/07/18 22:09:58 - INSTALL: always: Mapping Automation Template for Device Template 'Windows Device'
+2019/07/18 22:09:58 - INSTALL: always: Mapping Automation Template for Device Template 'Cisco Router'
+2019/07/18 22:09:58 - INSTALL-AUTOMATION: always: Setting default data source profile to 5 Minute Collection (1)
+2019/07/18 22:10:00 - INSTALL: always: Updating automation network (1), mode "on" => "on", subnet "192.168.1.0/24" => 192.168.0.0/22"
+2019/07/18 22:10:00 - INSTALL: always: Adding extra snmp settings for automation
+2019/07/18 22:10:00 - INSTALL: always: Selecting Automation Option Set 1
+2019/07/18 22:10:00 - INSTALL: always: Updating Automation Option Set 1
+2019/07/18 22:10:00 - INSTALL: always: Successfully updated Automation Option Set 1
+2019/07/18 22:10:00 - INSTALL: always: Resequencing Automation Option Set 1
+2019/07/18 22:10:01 - INSTALL: always: Device Template for First Cacti Device is 4
+2019/07/18 22:10:04 - AUTOM8 NOTE: Graph Added - Device[1], Graph[1], DS[1]
+2019/07/18 22:10:08 - AUTOM8 NOTE: Graph Added - Device[1], Graph[2], DS[2]
+2019/07/18 22:10:11 - AUTOM8 NOTE: Graph Added - Device[1], Graph[3], DS[3]
+2019/07/18 22:10:14 - AUTOM8 NOTE: Graph Added - Device[1], Graph[4], DS[4, 5]
+2019/07/18 22:10:14 - AUTOM8 NOTE: [PID: 137] create_header_node() Parent[0] Tree Item - Added - id: (1) Title: (Local )
+2019/07/18 22:10:15 - AUTOM8 NOTE: [PID: 137] create_header_node() Parent[1] Tree Item - Added - id: (2) Title: (Machine)
+2019/07/18 22:10:15 - AUTOM8 NOTE: [PID: 137] create_device_node() Device[1] Tree Item - Added - Parent[2] Id[3]
+2019/07/18 22:10:15 - ERROR PHP CORE_WARNING: Module 'snmp' already loaded in file: Unknown on line: 0
+2019/07/18 22:10:15 - CMDPHP PHP ERROR Backtrace:  (CactiShutdownHandler())
+2019/07/18 22:10:15 - INSTALL: always: Creating Graphs for Default Device
+2019/07/18 22:10:16 - INSTALL: always: Adding Device to Default Tree
+2019/07/18 22:10:16 - ERROR PHP CORE_WARNING: Module 'snmp' already loaded in file: Unknown on line: 0
+2019/07/18 22:10:16 - CMDPHP PHP ERROR Backtrace:  (CactiShutdownHandler())
+2019/07/18 22:10:16 - INSTALL: always: Repopulating poller cache
+2019/07/18 22:10:17 - INSTALL: always: Repopulating SNMP Agent cache
+2019/07/18 22:10:35 - INSTALL: always: Generating RSA Key Pair
+2019/07/18 22:10:35 - INSTALL: always: Finished INSTALL Process for v1.2.4
+2019/07/18 22:10:37 - INSTALL: always: La instalación se inició a las 2019-07-18 22:05:24, se completó el 2019-07-18 22:10:36
+2019/07/18 22:11:12 - ERROR PHP CORE_WARNING: Module 'snmp' already loaded in file: Unknown on line: 0
+2019/07/18 22:11:12 - CMDPHP PHP ERROR Backtrace:  (CactiShutdownHandler())
+2019/07/18 22:11:12 - ERROR PHP CORE_WARNING: Module 'snmp' already loaded in file: Unknown on line: 0
+2019/07/18 22:11:12 - CMDPHP PHP ERROR Backtrace:  (CactiShutdownHandler())
