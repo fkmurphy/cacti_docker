@@ -1346,3 +1346,76 @@
 2019/07/18 22:05:29 - IMPORT Writing file: /var/www/cacti/scripts/ss_gexport.php
 2019/07/18 22:05:29 - IMPORT Write Status file: /var/www/cacti/scripts/ss_gexport.php, with Status escrito
 2019/07/18 22:05:29 - IMPORT Importing XML Data for Cacti_Stats.xml
+2019/07/18 22:07:11 - IMPORT File creation complete
+2019/07/18 22:07:11 - INSTALL: always: Import of Package #1 'Cacti_Stats.xml.gz' under Profile '1' succeeded
+2019/07/18 22:07:12 - INSTALL: always: About to import Package #2 'Cisco_Router.xml.gz'.
+2019/07/18 22:07:12 - IMPORT NOTE: Got Package Signature
+2019/07/18 22:07:12 - IMPORT NOTE: File is Signed Correctly
+2019/07/18 22:07:12 - IMPORT Loading Plugin Information from package
+2019/07/18 22:07:12 - IMPORT Verifying each files signature
+2019/07/18 22:07:12 - IMPORT NOTE: File OK: resource/snmp_queries/interface.xml
+2019/07/18 22:07:12 - IMPORT NOTE: File OK: Cisco_Router.xml
+2019/07/18 22:07:12 - IMPORT Writing Files
+2019/07/18 22:07:12 - IMPORT Writing file: /var/www/cacti/resource/snmp_queries/interface.xml
+2019/07/18 22:07:12 - IMPORT Write Status file: /var/www/cacti/resource/snmp_queries/interface.xml, with Status escrito
+2019/07/18 22:07:12 - IMPORT Importing XML Data for Cisco_Router.xml
+2019/07/18 22:08:00 - IMPORT File creation complete
+2019/07/18 22:08:00 - INSTALL: always: Import of Package #2 'Cisco_Router.xml.gz' under Profile '1' succeeded
+2019/07/18 22:08:00 - INSTALL: always: About to import Package #3 'Generic_SNMP_Device.xml.gz'.
+2019/07/18 22:08:00 - IMPORT NOTE: Got Package Signature
+2019/07/18 22:08:00 - IMPORT NOTE: File is Signed Correctly
+2019/07/18 22:08:00 - IMPORT Loading Plugin Information from package
+2019/07/18 22:08:00 - IMPORT Verifying each files signature
+2019/07/18 22:08:00 - IMPORT NOTE: File OK: resource/snmp_queries/interface.xml
+2019/07/18 22:08:00 - IMPORT NOTE: File OK: Generic_SNMP_Device.xml
+2019/07/18 22:08:00 - IMPORT Writing Files
+2019/07/18 22:08:00 - IMPORT Writing file: /var/www/cacti/resource/snmp_queries/interface.xml
+2019/07/18 22:08:00 - IMPORT Write Status file: /var/www/cacti/resource/snmp_queries/interface.xml, with Status escrito
+2019/07/18 22:08:00 - IMPORT Importing XML Data for Generic_SNMP_Device.xml
+2019/07/18 22:08:16 - IMPORT File creation complete
+2019/07/18 22:08:16 - INSTALL: always: Import of Package #3 'Generic_SNMP_Device.xml.gz' under Profile '1' succeeded
+2019/07/18 22:08:17 - INSTALL: always: About to import Package #4 'Local_Linux_Machine.xml.gz'.
+2019/07/18 22:08:17 - IMPORT NOTE: Got Package Signature
+2019/07/18 22:08:17 - IMPORT NOTE: File is Signed Correctly
+2019/07/18 22:08:17 - IMPORT Loading Plugin Information from package
+2019/07/18 22:08:17 - IMPORT Verifying each files signature
+2019/07/18 22:08:17 - IMPORT NOTE: File OK: resource/script_queries/unix_disk.xml
+2019/07/18 22:08:17 - IMPORT NOTE: File OK: scripts/query_unix_partitions.pl
+2019/07/18 22:08:17 - IMPORT NOTE: File OK: Local_Linux_Machine.xml
+2019/07/18 22:08:17 - IMPORT Writing Files
+2019/07/18 22:08:17 - IMPORT Writing file: /var/www/cacti/resource/script_queries/unix_disk.xml
+2019/07/18 22:08:17 - IMPORT Write Status file: /var/www/cacti/resource/script_queries/unix_disk.xml, with Status escrito
+2019/07/18 22:08:17 - IMPORT Writing file: /var/www/cacti/scripts/query_unix_partitions.pl
+2019/07/18 22:08:17 - IMPORT Write Status file: /var/www/cacti/scripts/query_unix_partitions.pl, with Status escrito
+2019/07/18 22:08:17 - IMPORT Importing XML Data for Local_Linux_Machine.xml
+2019/07/18 22:08:33 - IMPORT File creation complete
+2019/07/18 22:08:33 - INSTALL: always: Import of Package #4 'Local_Linux_Machine.xml.gz' under Profile '1' succeeded
+2019/07/18 22:08:33 - INSTALL: always: About to import Package #5 'NetSNMP_Device.xml.gz'.
+2019/07/18 22:08:33 - IMPORT NOTE: Got Package Signature
+2019/07/18 22:08:33 - IMPORT NOTE: File is Signed Correctly
+2019/07/18 22:08:33 - IMPORT Loading Plugin Information from package
+2019/07/18 22:08:33 - IMPORT Verifying each files signature
+2019/07/18 22:08:33 - IMPORT NOTE: File OK: resource/snmp_queries/interface.xml
+2019/07/18 22:08:33 - IMPORT NOTE: File OK: resource/snmp_queries/net-snmp_disk.xml
+2019/07/18 22:08:33 - IMPORT NOTE: File OK: resource/script_server/host_disk.xml
+2019/07/18 22:08:33 - IMPORT NOTE: File OK: resource/script_server/host_cpu.xml
+2019/07/18 22:08:33 - IMPORT NOTE: File OK: resource/snmp_queries/net-snmp_devio.xml
+2019/07/18 22:08:33 - IMPORT NOTE: File OK: scripts/ss_host_disk.php
+2019/07/18 22:08:33 - IMPORT NOTE: File OK: scripts/ss_host_cpu.php
+2019/07/18 22:08:33 - IMPORT NOTE: File OK: NetSNMP_Device.xml
+2019/07/18 22:08:33 - IMPORT Writing Files
+2019/07/18 22:08:33 - IMPORT Writing file: /var/www/cacti/resource/snmp_queries/interface.xml
+2019/07/18 22:08:33 - IMPORT Write Status file: /var/www/cacti/resource/snmp_queries/interface.xml, with Status escrito
+2019/07/18 22:08:33 - IMPORT Writing file: /var/www/cacti/resource/snmp_queries/net-snmp_disk.xml
+2019/07/18 22:08:33 - IMPORT Write Status file: /var/www/cacti/resource/snmp_queries/net-snmp_disk.xml, with Status escrito
+2019/07/18 22:08:33 - IMPORT Writing file: /var/www/cacti/resource/script_server/host_disk.xml
+2019/07/18 22:08:33 - IMPORT Write Status file: /var/www/cacti/resource/script_server/host_disk.xml, with Status escrito
+2019/07/18 22:08:33 - IMPORT Writing file: /var/www/cacti/resource/script_server/host_cpu.xml
+2019/07/18 22:08:33 - IMPORT Write Status file: /var/www/cacti/resource/script_server/host_cpu.xml, with Status escrito
+2019/07/18 22:08:33 - IMPORT Writing file: /var/www/cacti/resource/snmp_queries/net-snmp_devio.xml
+2019/07/18 22:08:33 - IMPORT Write Status file: /var/www/cacti/resource/snmp_queries/net-snmp_devio.xml, with Status escrito
+2019/07/18 22:08:33 - IMPORT Writing file: /var/www/cacti/scripts/ss_host_disk.php
+2019/07/18 22:08:33 - IMPORT Write Status file: /var/www/cacti/scripts/ss_host_disk.php, with Status escrito
+2019/07/18 22:08:33 - IMPORT Writing file: /var/www/cacti/scripts/ss_host_cpu.php
+2019/07/18 22:08:33 - IMPORT Write Status file: /var/www/cacti/scripts/ss_host_cpu.php, with Status escrito
+2019/07/18 22:08:33 - IMPORT Importing XML Data for NetSNMP_Device.xml

@@ -103,3 +103,11 @@
 [2019-07-18 22:05:28] [          global always  ] No tables where found or selected for conversion
 [2019-07-18 22:05:28] [          global always  ] Found 6 templates to install
 [2019-07-18 22:05:28] [          global always  ] About to import Package #1 'Cacti_Stats.xml.gz'.
+[2019-07-18 22:07:11] [          global always  ] Import of Package #1 'Cacti_Stats.xml.gz' under Profile '1' succeeded
+[2019-07-18 22:07:12] [          global always  ] About to import Package #2 'Cisco_Router.xml.gz'.
+[2019-07-18 22:08:00] [          global always  ] Import of Package #2 'Cisco_Router.xml.gz' under Profile '1' succeeded
+[2019-07-18 22:08:00] [          global always  ] About to import Package #3 'Generic_SNMP_Device.xml.gz'.
+[2019-07-18 22:08:16] [          global always  ] Import of Package #3 'Generic_SNMP_Device.xml.gz' under Profile '1' succeeded
+[2019-07-18 22:08:17] [          global always  ] About to import Package #4 'Local_Linux_Machine.xml.gz'.
+[2019-07-18 22:08:33] [          global always  ] Import of Package #4 'Local_Linux_Machine.xml.gz' under Profile '1' succeeded
+[2019-07-18 22:08:33] [          global always  ] About to import Package #5 'NetSNMP_Device.xml.gz'.
