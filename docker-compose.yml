@@ -10,7 +10,7 @@ services:
       networks:
          - back
       env_file:
-         - ./cacti_env
+         - ./cacti.env
       depends_on:
          - mysql
       restart: always
@@ -30,7 +30,7 @@ services:
          - MYSQL_ROOT_PASSWORD=cacti
          - TZ=America/Argentina/Buenos_Aires
       env_file:
-         - ./mysql_env
+         - ./mysql.env
       volumes:
          - ./mysql_data:/var/lib/mysql
          - ./mysqld.cnf:/etc/mysql/mysql.conf.d/mysqld.cnf

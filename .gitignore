@@ -1,4 +1,3 @@
 anterior
 mysql_data
-./cacti_env
-./mysql_env
+*.env
