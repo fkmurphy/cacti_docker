@@ -1,0 +1,41 @@
+version: '3'
+
+services:
+   http:
+      build: ./cacti/.
+      container_name: cacti
+      ports:
+         - 8084:80 
+         - 161:161
+      networks:
+         - back
+      env_file:
+         - ./cacti_env
+      depends_on:
+         - mysql
+      restart: always
+      volumes:
+         -  ./cacti/data:/var/www/cacti
+         -  ./cacti/plugins:/var/www/cacti/plugins
+   mysql:
+      image: mysql:5.7
+      container_name: cacti_mysql
+      restart: always
+      command: --default-authentication-plugin=mysql_native_password 
+      networks:
+         - back
+      ports:
+         - "3306"
+      environment:
+         - MYSQL_ROOT_PASSWORD=cacti
+         - TZ=America/Argentina/Buenos_Aires
+      env_file:
+         - ./mysql_env
+      volumes:
+         - ./mysql_data:/var/lib/mysql
+         - ./mysqld.cnf:/etc/mysql/mysql.conf.d/mysqld.cnf
+
+networks:
+   back:
+      driver: bridge
+

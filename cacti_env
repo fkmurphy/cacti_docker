@@ -1,0 +1,6 @@
+DB_NAME=cacti 
+DB_USER=cacti
+DB_PASS=cacti
+DB_HOST=mysql
+DB_PORT=3306 
+DB_ROOT_PASS=cacti

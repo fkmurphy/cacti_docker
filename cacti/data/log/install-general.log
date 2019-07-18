@@ -1,0 +1,102 @@
+[2019-07-13 17:06:29] [ always  ] Spawning background process: /usr/bin/php '/var/www/cacti/install/background.php' 1563037589.3373
+[2019-07-13 17:06:29] [ always  ] Setting PHP Option max_execution_time = 0
+[2019-07-13 17:06:29] [ always  ] Setting PHP Option memory_limit = -1
+[2019-07-13 17:06:33] [ always  ] Starting INSTALL Process for v1.2.4
+[2019-07-13 17:06:33] [ always  ] No tables where found or selected for conversion
+[2019-07-13 17:06:33] [ always  ] Found 6 templates to install
+[2019-07-13 17:06:33] [ always  ] About to import Package #1 'Cacti_Stats.xml.gz'.
+[2019-07-13 17:09:07] [ always  ] Import of Package #1 'Cacti_Stats.xml.gz' under Profile '1' succeeded
+[2019-07-13 17:09:07] [ always  ] About to import Package #2 'Cisco_Router.xml.gz'.
+[2019-07-13 17:10:33] [ always  ] Import of Package #2 'Cisco_Router.xml.gz' under Profile '1' succeeded
+[2019-07-13 17:10:33] [ always  ] About to import Package #3 'Generic_SNMP_Device.xml.gz'.
+[2019-07-13 17:10:54] [ always  ] Import of Package #3 'Generic_SNMP_Device.xml.gz' under Profile '1' succeeded
+[2019-07-13 17:10:54] [ always  ] About to import Package #4 'Local_Linux_Machine.xml.gz'.
+[2019-07-13 17:11:16] [ always  ] Import of Package #4 'Local_Linux_Machine.xml.gz' under Profile '1' succeeded
+[2019-07-13 17:11:17] [ always  ] About to import Package #5 'NetSNMP_Device.xml.gz'.
+[2019-07-13 17:13:04] [ always  ] Import of Package #5 'NetSNMP_Device.xml.gz' under Profile '1' succeeded
+[2019-07-13 17:13:04] [ always  ] About to import Package #6 'Windows_Device.xml.gz'.
+[2019-07-13 17:13:31] [ always  ] Import of Package #6 'Windows_Device.xml.gz' under Profile '1' succeeded
+[2019-07-13 17:13:33] [ always  ] Mapping Automation Template for Device Template 'Net-SNMP Device'
+[2019-07-13 17:13:34] [ always  ] Mapping Automation Template for Device Template 'Windows Device'
+[2019-07-13 17:13:34] [ always  ] Mapping Automation Template for Device Template 'Cisco Router'
+[2019-07-13 17:13:35] [ always  ] Updating automation network (1), mode "on" => "on", subnet "192.168.1.0/24" => 192.168.1.0/24"
+[2019-07-13 17:13:36] [ always  ] Device Template for First Cacti Device is 4
+[2019-07-13 17:13:53] [ always  ] Creating Graphs for Default Device
+[2019-07-13 17:13:54] [ always  ] Adding Device to Default Tree
+[2019-07-13 17:13:55] [ always  ] Repopulating poller cache
+[2019-07-13 17:13:56] [ always  ] Repopulating SNMP Agent cache
+[2019-07-13 17:14:21] [ always  ] Generating RSA Key Pair
+[2019-07-13 17:14:23] [ always  ] Finished INSTALL Process for v1.2.4
+[2019-07-13 17:14:25] [ always  ] La instalación se inició a las 2019-07-13 17:06:29, se completó el 2019-07-13 17:14:25
+[2019-07-13 20:50:35] [ always  ] Spawning background process: /usr/bin/php '/var/www/cacti/install/background.php' 1563051035.5113
+[2019-07-13 20:50:35] [ always  ] Setting PHP Option max_execution_time = 0
+[2019-07-13 20:50:35] [ always  ] Setting PHP Option memory_limit = -1
+[2019-07-13 20:50:38] [ always  ] Starting INSTALL Process for v1.2.4
+[2019-07-13 20:50:39] [ always  ] No tables where found or selected for conversion
+[2019-07-13 20:50:39] [ always  ] Found 6 templates to install
+[2019-07-13 20:50:40] [ always  ] About to import Package #1 'Cacti_Stats.xml.gz'.
+[2019-07-13 20:53:01] [ always  ] Import of Package #1 'Cacti_Stats.xml.gz' under Profile '1' succeeded
+[2019-07-13 20:53:01] [ always  ] About to import Package #2 'Cisco_Router.xml.gz'.
+[2019-07-13 20:54:13] [ always  ] Import of Package #2 'Cisco_Router.xml.gz' under Profile '1' succeeded
+[2019-07-13 20:54:13] [ always  ] About to import Package #3 'Generic_SNMP_Device.xml.gz'.
+[2019-07-13 20:54:44] [ always  ] Import of Package #3 'Generic_SNMP_Device.xml.gz' under Profile '1' succeeded
+[2019-07-13 20:54:45] [ always  ] About to import Package #4 'Local_Linux_Machine.xml.gz'.
+[2019-07-13 20:55:05] [ always  ] Import of Package #4 'Local_Linux_Machine.xml.gz' under Profile '1' succeeded
+[2019-07-13 20:55:05] [ always  ] About to import Package #5 'NetSNMP_Device.xml.gz'.
+[2019-07-13 20:56:42] [ always  ] Import of Package #5 'NetSNMP_Device.xml.gz' under Profile '1' succeeded
+[2019-07-13 20:56:42] [ always  ] About to import Package #6 'Windows_Device.xml.gz'.
+[2019-07-13 20:57:01] [ always  ] Import of Package #6 'Windows_Device.xml.gz' under Profile '1' succeeded
+[2019-07-13 20:57:02] [ always  ] Mapping Automation Template for Device Template 'Net-SNMP Device'
+[2019-07-13 20:57:03] [ always  ] Mapping Automation Template for Device Template 'Windows Device'
+[2019-07-13 20:57:03] [ always  ] Mapping Automation Template for Device Template 'Cisco Router'
+[2019-07-13 20:57:06] [ always  ] Updating automation network (1), mode "on" => "on", subnet "192.168.1.0/24" => 192.168.1.0/24"
+[2019-07-13 20:57:07] [ always  ] Device Template for First Cacti Device is 4
+[2019-07-13 20:57:20] [ always  ] Creating Graphs for Default Device
+[2019-07-13 20:57:20] [ always  ] Adding Device to Default Tree
+[2019-07-13 20:57:21] [ always  ] Repopulating poller cache
+[2019-07-13 20:57:22] [ always  ] Repopulating SNMP Agent cache
+[2019-07-13 20:57:48] [ always  ] Generating RSA Key Pair
+[2019-07-13 20:57:48] [ always  ] Finished INSTALL Process for v1.2.4
+[2019-07-13 20:57:50] [ always  ] La instalación se inició a las 2019-07-13 20:50:35, se completó el 2019-07-13 20:57:50
+[2019-07-18 18:06:24] [ always  ] Spawning background process: /usr/bin/php '/var/www/cacti/install/background.php' 1563473184.599
+[2019-07-18 18:06:24] [ always  ] Setting PHP Option max_execution_time = 0
+[2019-07-18 18:06:24] [ always  ] Setting PHP Option memory_limit = -1
+[2019-07-18 18:06:27] [ always  ] Starting INSTALL Process for v1.2.4
+[2019-07-18 18:06:27] [ always  ] No tables where found or selected for conversion
+[2019-07-18 18:06:27] [ always  ] Found 6 templates to install
+[2019-07-18 18:06:28] [ always  ] About to import Package #1 'Cacti_Stats.xml.gz'.
+[2019-07-18 18:08:15] [ always  ] Import of Package #1 'Cacti_Stats.xml.gz' under Profile '1' succeeded
+[2019-07-18 18:08:16] [ always  ] About to import Package #2 'Cisco_Router.xml.gz'.
+[2019-07-18 18:09:19] [ always  ] Import of Package #2 'Cisco_Router.xml.gz' under Profile '1' succeeded
+[2019-07-18 18:09:19] [ always  ] About to import Package #3 'Generic_SNMP_Device.xml.gz'.
+[2019-07-18 18:09:43] [ always  ] Import of Package #3 'Generic_SNMP_Device.xml.gz' under Profile '1' succeeded
+[2019-07-18 18:09:43] [ always  ] About to import Package #4 'Local_Linux_Machine.xml.gz'.
+[2019-07-18 18:10:05] [ always  ] Import of Package #4 'Local_Linux_Machine.xml.gz' under Profile '1' succeeded
+[2019-07-18 18:10:06] [ always  ] About to import Package #5 'NetSNMP_Device.xml.gz'.
+[2019-07-18 18:11:35] [ always  ] Import of Package #5 'NetSNMP_Device.xml.gz' under Profile '1' succeeded
+[2019-07-18 18:11:35] [ always  ] About to import Package #6 'Windows_Device.xml.gz'.
+[2019-07-18 18:11:59] [ always  ] Import of Package #6 'Windows_Device.xml.gz' under Profile '1' succeeded
+[2019-07-18 18:12:00] [ always  ] Mapping Automation Template for Device Template 'Net-SNMP Device'
+[2019-07-18 18:12:00] [ always  ] Mapping Automation Template for Device Template 'Windows Device'
+[2019-07-18 18:12:00] [ always  ] Mapping Automation Template for Device Template 'Cisco Router'
+[2019-07-18 18:12:01] [ always  ] Updating automation network (1), mode "on" => "on", subnet "192.168.1.0/24" => 192.168.1.0/24"
+[2019-07-18 18:12:01] [ always  ] Adding extra snmp settings for automation
+[2019-07-18 18:12:01] [ always  ] Selecting Automation Option Set 1
+[2019-07-18 18:12:02] [ always  ] Updating Automation Option Set 1
+[2019-07-18 18:12:02] [ always  ] Successfully updated Automation Option Set 1
+[2019-07-18 18:12:02] [ always  ] Resequencing Automation Option Set 1
+[2019-07-18 18:12:02] [ always  ] Device Template for First Cacti Device is 4
+[2019-07-18 18:12:16] [ always  ] Creating Graphs for Default Device
+[2019-07-18 18:12:17] [ always  ] Adding Device to Default Tree
+[2019-07-18 18:12:17] [ always  ] Repopulating poller cache
+[2019-07-18 18:12:18] [ always  ] Repopulating SNMP Agent cache
+[2019-07-18 18:12:46] [ always  ] Generating RSA Key Pair
+[2019-07-18 18:12:47] [ always  ] Finished INSTALL Process for v1.2.4
+[2019-07-18 18:12:49] [ always  ] La instalación se inició a las 2019-07-18 18:06:24, se completó el 2019-07-18 18:12:49
+[2019-07-18 22:05:24] [ always  ] Spawning background process: /usr/bin/php '/var/www/cacti/install/background.php' 1563487524.7986
+[2019-07-18 22:05:24] [ always  ] Setting PHP Option max_execution_time = 0
+[2019-07-18 22:05:24] [ always  ] Setting PHP Option memory_limit = -1
+[2019-07-18 22:05:28] [ always  ] Starting INSTALL Process for v1.2.4
+[2019-07-18 22:05:28] [ always  ] No tables where found or selected for conversion
+[2019-07-18 22:05:28] [ always  ] Found 6 templates to install
+[2019-07-18 22:05:28] [ always  ] About to import Package #1 'Cacti_Stats.xml.gz'.

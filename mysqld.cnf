@@ -1,0 +1,53 @@
+# Copyright (c) 2014, 2016, Oracle and/or its affiliates. All rights reserved.
+#
+# This program is free software; you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation; version 2 of the License.
+#
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License
+# along with this program; if not, write to the Free Software
+# Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301 USA
+
+#
+# The MySQL  Server configuration file.
+#
+# For explanations see
+# http://dev.mysql.com/doc/mysql/en/server-system-variables.html
+
+[mysqld]
+pid-file	= /var/run/mysqld/mysqld.pid
+socket		= /var/run/mysqld/mysqld.sock
+datadir		= /var/lib/mysql
+#log-error	= /var/log/mysql/error.log
+# By default we only accept connections from localhost
+#bind-address	= 127.0.0.1
+# Disabling symbolic-links is recommended to prevent assorted security risks
+symbolic-links=0
+max_allowed_packet=16M
+max_heap_table_size=123M
+character-set-server=utf8mb4
+collation-server=utf8mb4_unicode_ci
+#default-time-zone = "UTC"
+explicit_defaults_for_timestamp = 1
+innodb_flush_log_at_timeout=3
+innodb_read_io_threads=32
+innodb_write_io_threads=16
+# Sobre buffer_pool_size y buffer_pool_instances
+# si buffer_pool_size 2048 -> buffer_pool_instances = buffer_pool_size/ 128M 
+# buffer_pool_instances debe ser menor o igual a 64
+innodb_buffer_pool_size=2048M
+innodb_buffer_pool_instances=17
+innodb_doublewrite=OFF
+innodb_io_capacity=5000
+innodb_io_capacity_max=10000
+tmp_table_size=123M
+# join_buffer_size: 
+# si se ejecuta un join menor a 246M será mantenido en memoria
+# nunca se escribirá en un archivo temporal
+join_buffer_size=246M
+ 
