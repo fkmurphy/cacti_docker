@@ -53,8 +53,6 @@ El estado del servicio mysql se comprueba mediante el siguiente trozo de código
         count=$(($count+1))
         # estado de la base de datos
         query=$(mysqladmin -h ${DB_HOST} -u root --password=${DB_ROOT_PASS} status)
-        # estado de la base de datos a partir de una consulta sql
-        #query=$(mysql -u root --password=${DB_ROOT_PASS} -h ${DB_HOST} -e  "SELECT 1")
         estado=$(echo $?)
         # esperar para volver a consultar
         sleep 10
@@ -69,3 +67,5 @@ por esto:
 query=$(mysql -u root --password=${DB_ROOT_PASS} -h ${DB_HOST} -e  "SELECT 1")
 ```
 Al finalizar la configuración e importanción de la base de datos (esto incluye cacti.sql) se crea un archivo llamado install.lock dentro del directorio de cacti. Este archivo es necesario para que la instalación de inicio.sh no vuelva a ejecutarse.
+
+> Otros scripts en internet utilizan comprobación por disponibilidad en el puerto 3306/tcp o sólo utilizan depends_on sobre docker-compose.yml. Esto no es suficiente, que el puerto esté disponible no significa que la base de datos esté disponible para aceptar consultas.
