@@ -4,35 +4,35 @@
 
 # Zona horaria en php.ini
 echo "$(date +%F_%R) [Nota] Configurando PHP.INI con variable de ambiente TZ '${TZ}'"
-sed -i -e "s/%TZ%/${TZ}/" /etc/php7/php.ini
+
+sed -e "s|%TZ%|$TZ|" -i /etc/php7/php.ini
 #rm /etc/localtime
-#ln -s /usr/share/zoneinfo/${TZ} /etc/localtime
+#TZAUX=${TZ/\"//}
+#TZAUX=${TZAUX%%\"}
+
+#cp /usr/share/zoneinfo/${TZAUX} /etc/localtime
+#export TZ=${TZ}
+#echo $TZ > /etc/timezone && apk del tzdata
 
 #archivo de bloqueo - Si está instalado no vuelve a ejecutar
 if [ ! -f /var/www/cacti/install.lock ]; then
     echo "$(date +%F_%R) [Nueva instalación] se comienza una instalación."
 
     # este script supone que ya se poseen los archivos en /var/www/cacti
-#    echo "$(date +%F_%R) [New Install] Extracting and installing Spine files to /spine."
-#    tar -xf /cacti_install/cacti-spine-*.tar.gz -C /tmp
-#    cd /tmp/cacti-spine-* && \
-#       ./configure --prefix=/spine && make && make install && \
-#       chown root:root /spine/bin/spine && \
-#       chmod +s /spine/bin/spine
 
     # Se reemplazan las configuraciones por los valores en las variables
     echo "$(date +%F_%R) [Nueva instalación] Actualizando archivos."
-    sed -i -e "s/%DB_HOST%/${DB_HOST}/" \
-           -e "s/%DB_PORT%/${DB_PORT}/" \
-           -e "s/%DB_NAME%/${DB_NAME}/" \
-           -e "s/%DB_USER%/${DB_USER}/" \
-           -e "s/%DB_PASS%/${DB_PASS}/" \
-           -e "s/%DB_PORT%/${DB_PORT}/" \
-           -e "s/%RDB_HOST%/${RDB_HOST}/" \
-           -e "s/%RDB_PORT%/${RDB_PORT}/" \
-           -e "s/%RDB_NAME%/${RDB_NAME}/" \
-           -e "s/%RDB_USER%/${RDB_USER}/" \
-           -e "s/%RDB_PASS%/${RDB_PASS}/" \
+    sed -i -e "s|%DB_HOST%|${DB_HOST}|" \
+           -e "s|%DB_PORT%|${DB_PORT}|" \
+           -e "s|%DB_NAME%|${DB_NAME}|" \
+           -e "s|%DB_USER%|${DB_USER}|" \
+           -e "s|%DB_PASS%|${DB_PASS}|" \
+           -e "s|%DB_PORT%|${DB_PORT}|" \
+           -e "s|%RDB_HOST%|${RDB_HOST}|" \
+           -e "s|%RDB_PORT%|${RDB_PORT}|" \
+           -e "s|%RDB_NAME%|${RDB_NAME}|" \
+           -e "s|%RDB_USER%|${RDB_USER}|" \
+           -e "s|%RDB_PASS%|${RDB_PASS}|" \
         /var/www/cacti/include/config.php 
 
     echo "$(date +%F_%R) [Nueva instalación] Esperando a la base de datos ${DB_HOST}:${DB_PORT}. (puede tardar unos minutos)"
@@ -75,8 +75,6 @@ if [ ! -f /var/www/cacti/install.lock ]; then
         mysql -h ${DB_HOST} --port=${DB_PORT} -u${DB_USER} --password=${DB_PASS} ${DB_NAME} < /var/www/cacti/cacti.sql
     fi
 
-    # CRON 
-    echo '*/5 * * * * apache php /var/www/cacti/poller.php > /dev/null 2>&1' >> /etc/crontabs/root
 
     # Crear el archivo para bloquear instalación
     touch /var/www/cacti/install.lock
@@ -91,6 +89,8 @@ chown -R apache.apache /var/www/cacti/log/
 chown -R apache.apache /var/www/cacti/scripts/
 chown -R apache.apache /var/www/cacti/rra/
 
+# CRON 
+echo '*/5 * * * *  php7 /var/www/cacti/poller.php > /dev/null 2>&1' >> /etc/crontabs/root
 
 echo "$(date +%F_%R)  [Nota] Ejecutando crond en background"
 crond -b

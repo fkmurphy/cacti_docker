@@ -1,7 +1,7 @@
 FROM alpine:3.10
 
 RUN apk update && apk upgrade && apk add --update --no-cache  \
-	apache2 php7 php7-apache2 php7-session php7-mysqli \ 
+	tzdata apache2 php7 php7-apache2 php7-session php7-mysqli \ 
 	php7-pdo_mysql php7-xml php7-json php7-ctype php7-gd \ 
 	php7-gmp php7-mbstring php7-simplexml php7-sockets php7-posix php7-ldap \
 	# perl
@@ -44,13 +44,19 @@ ENV \
     DOMAIN=127.0.0.1 \
     SNMP_COMMUNITY=public \
     REMOTE_POLLER=0 \
-    TZ=UTC
+    TZ=America/Argentina/Buenos_Aires
+
+## no borrar tzdata -> vuelve la hora UTC
+RUN cp /usr/share/zoneinfo/${TZ} /etc/localtime && echo $TZ > /etc/timezone 
+RUN export TZ=${TZ}
 
 # escuchar en puertos
 EXPOSE 80 443 161
 
 # copiar script de inicio y ejecutar
 COPY inicio.sh /inicio.sh
+COPY poller_script.sh /poller_script.sh
+#CMD ["/inicio.sh" , "/poller_script.sh"]
 CMD ["/inicio.sh"]
 #ENTRYPOINT ["/usr/sbin/httpd"]
 #CMD ["-D", "FOREGROUND"]
